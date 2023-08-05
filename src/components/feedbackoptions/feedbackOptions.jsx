@@ -1,4 +1,5 @@
 import s from './feedbackOptions.module.css';
+import PropTypes from 'prop-types';
 export const FeedbackOptions = ({ options }) => {
   return (
     <ul className={s.btn_list}>
@@ -19,4 +20,8 @@ export const FeedbackOptions = ({ options }) => {
       </li>
     </ul>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.func,
 };
